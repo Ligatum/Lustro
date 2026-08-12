@@ -1,0 +1,1 @@
+Agregate test results performed on the Lustro_Audit code. Test source files are included in this folder. NIST source files are omitted due to their large size. These may be included on a later date, if required. Practrand tests will be updated in the future to include longer runs.
