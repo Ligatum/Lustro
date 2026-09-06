@@ -14,7 +14,11 @@ The API, technical documentation, test implementations, empirical evaluation, an
 
 Detailed documentation for the project is available below:
 
+<<<<<<< HEAD
 1. **[Whitepaper](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
+=======
+1. **[Technical Concept](DOCS/WHITEPAPER.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
+>>>>>>> 9bd2a48a40fb0643c34910cefa1e514dcecc1bc5
 2. **[Ecosystem Policy](DOCS/ECOSYSTEM-POLICY.md)** – Guidelines and policies concerning the ecosystem.
 3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
 4. **[API Architecture](DOCS/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. For the API code please click **[here](https://github.com/Ligatum/Lustro_API)**. DLL files are **[here](API/LUSTRO_DLL_FILES)**.
@@ -26,3 +30,7 @@ Detailed documentation for the project is available below:
 **<p align="center">Conceptual diagram of the Lustro mechanism.</p>**
 
 <img width="1359" height="1061" alt="lustro_diagram" src="https://github.com/user-attachments/assets/a267cf39-e666-4cb4-985c-218afd4a5e1f" />
+
+**<p align="center">Quick comparison chart.</p>**
+
+<img width="1884" height="1125" alt="lustro_comparison" src="https://github.com/user-attachments/assets/2e7c3134-75e9-4d76-ac2f-7f7dc279c6a5" />
