@@ -27,6 +27,6 @@ Detailed documentation for the project is available below:
 
 <img width="1359" height="1061" alt="lustro_diagram" src="https://github.com/user-attachments/assets/a267cf39-e666-4cb4-985c-218afd4a5e1f" />
 
-**<p align="center">Qucik comparison below.</p>**
+**<p align="center">Quick comparison below.</p>**
 
 <img width="1884" height="1125" alt="lustro_comparison" src="https://github.com/user-attachments/assets/2e7c3134-75e9-4d76-ac2f-7f7dc279c6a5" />
