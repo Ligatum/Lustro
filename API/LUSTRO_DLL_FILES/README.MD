@@ -1,1 +1,2 @@
-Ready to use DLL files along with speed results information.
+Ready to use DLL files and an example of speed test results.
+
