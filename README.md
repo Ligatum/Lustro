@@ -14,11 +14,8 @@ The API, technical documentation, test implementations, empirical evaluation, an
 
 Detailed documentation for the project is available below:
 
-<<<<<<< HEAD
-1. **[Whitepaper](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
-=======
-1. **[Technical Concept](DOCS/WHITEPAPER.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
->>>>>>> 9bd2a48a40fb0643c34910cefa1e514dcecc1bc5
+
+1. **[Technical Concept](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
 2. **[Ecosystem Policy](DOCS/ECOSYSTEM-POLICY.md)** – Guidelines and policies concerning the ecosystem.
 3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
 4. **[API Architecture](DOCS/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. For the API code please click **[here](https://github.com/Ligatum/Lustro_API)**. DLL files are **[here](API/LUSTRO_DLL_FILES)**.
