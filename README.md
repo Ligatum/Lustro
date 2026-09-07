@@ -10,24 +10,29 @@ All observations presented in this repository are empirical and describe the beh
 
 The API, technical documentation, test implementations, empirical evaluation, and the design philosophy behind the project are included throughout this repository.
 
-## Documentation
-
-Detailed documentation for the project is available below:
-
-
-1. **[Technical Concept](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. For the audit code please click **[here](https://github.com/Ligatum/Lustro_Audit)**. Test results are **[here](TESTS)**.
-2. **[Ecosystem Policy](DOCS/ECOSYSTEM-POLICY.md)** – Guidelines and policies concerning the ecosystem.
-3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
-4. **[API Architecture](DOCS/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. For the API code please click **[here](https://github.com/Ligatum/Lustro_API)**. DLL files are **[here](API/LUSTRO_DLL_FILES)**.
-5. **[Philosophy & Origins](DOCS/ORIGINS.md)** – Why Lustro...?
-
-##
-
-
-**<p align="center">Conceptual diagram of the Lustro mechanism.</p>**
-
-<img width="1359" height="1061" alt="lustro_diagram" src="https://github.com/user-attachments/assets/a267cf39-e666-4cb4-985c-218afd4a5e1f" />
 
 **<p align="center">Quick comparison chart.</p>**
 
 <img width="1884" height="1125" alt="lustro_comparison" src="https://github.com/user-attachments/assets/2e7c3134-75e9-4d76-ac2f-7f7dc279c6a5" />
+
+## Links
+
+The Audit code is available **[HERE](https://github.com/Ligatum/Lustro_Audit)**.<br>
+
+The API code is available **[HERE](https://github.com/Ligatum/Lustro_API)**.<br>
+
+## Documentation
+
+Detailed documentation for the project is available below:
+
+1. **[Technical Concept](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. Test results with source files are provided **[here](TESTS)**.
+2. **[Ecosystem Policy](DOCS/ECOSYSTEM-POLICY.md)** – Guidelines and policies concerning the ecosystem.
+3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
+4. **[API Architecture](DOCS/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API.  RTU C/C++ DLL files can be found **[here](API/LUSTRO_DLL_FILES)**.
+5. **[Philosophy & Origins](DOCS/ORIGINS.md)** – Why Lustro...?
+
+##
+
+**<p align="center">Conceptual diagram of the Lustro mechanism.</p>**
+
+<img width="1359" height="1061" alt="lustro_diagram" src="https://github.com/user-attachments/assets/a267cf39-e666-4cb4-985c-218afd4a5e1f" />
