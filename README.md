@@ -4,7 +4,7 @@ Lustro V1 is a single pass, deterministic diffusion engine built around the idea
 
 The project currently evaluates this architecture as a core mechanism for primitives such as hash functions, pseudo-random number generators (PRNG), and extendable-output functions (XOF). Scalar version speed can reach over **13 GB/s** with aggregate batching (i5-11600K @ 4.5 GHz).
 
-The API, technical documentation, test implementations, empirical evaluation, and the design philosophy behind the project are included throughout this repository.
+The API, technical documentation, test implementations, empirical evaluation, and design philosophy are provided across the Lustro repositories.
 
 All observations presented in this repository are empirical and describe the behaviour of the system. These observations are not intended as a formal proof of cryptographic security.
 
