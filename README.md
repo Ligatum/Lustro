@@ -4,14 +4,11 @@ Lustro V1 is a single pass, deterministic diffusion engine built around the idea
 
 The project currently evaluates this architecture as a core mechanism for primitives such as hash functions, pseudo-random number generators (PRNG), and extendable-output functions (XOF). Scalar version speed can reach over **13 GB/s** with aggregate batching (i5-11600K @ 4.5 GHz).
 
-The architecture intentionally separates the Initial Diffusion Module (IDM) from an autonomous state-evolution mechanism - the Evolving Representation Dynamics (ERD) - where interacting state channels co-evolve to derive the governing parameters.
+The API, technical documentation, test implementations, empirical evaluation, and the design philosophy behind the project are included throughout this repository.
 
 All observations presented in this repository are empirical and describe the behaviour of the system. These observations are not intended as a formal proof of cryptographic security.
 
-The API, technical documentation, test implementations, empirical evaluation, and the design philosophy behind the project are included throughout this repository.
-
-
-**<p align="center">Quick comparison chart.</p>**
+**<p align="center">Comparative overview of Lustro tree batching capabilities.</p>**
 
 <img width="1884" height="1125" alt="lustro_comparison" src="https://github.com/user-attachments/assets/2e7c3134-75e9-4d76-ac2f-7f7dc279c6a5" />
 
