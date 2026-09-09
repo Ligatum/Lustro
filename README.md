@@ -1,6 +1,6 @@
 ## **Lustro V1 Project Description**
 
-Lustro V1 is a deterministic, single-round diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Implemented in Rust, the engine provides a unified API with streaming capabilities, built-in batching, and automatic parallel stream dispatch.
+Lustro V1 is a deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Implemented in Rust, the engine provides a unified API with streaming capabilities, built-in batching, and automatic parallel stream dispatch.
 
 The architecture is currently evaluated as a core mechanism for primitives, including hash functions, pseudo-random number generators (PRNG), and extendable-output functions (XOF). Multi-threaded aggregate throughput for the scalar implementation reaches over 13 GB/s using batch processing (tested on Intel i5-11600K, 12t @ 4.5 GHz).
 
