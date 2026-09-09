@@ -15,7 +15,7 @@ What is Lustro V1?
 \* Aggregate throughput speed characteristics for scalar version:\
 6 physical cores - Hash/PRNG/XOF up to ~ 10 GB/s\
 12 logical cores - Hash/PRNG/XOF up to ~ 13 GB/s\
-Tests were performed on an Intel Core i5-11600K @ 4.5 GHz (constant frequency). Thread scaling exceeds 90% for large batches. Native AVX2 support is being finalized for the premium edition.
+Tests were performed on an Intel Core i5-11600K @ 4.5 GHz (constant frequency). Thread scaling exceeds 90% for large batches.
 
 \* Limitations of interpretation: All of the findings in this document are empirical and describe observed system properties. These findings do not constitute a formal mathematical proof of cryptographic security, perfect randomness or ergodicity. Questions regarding short and long-term state evolution and alternative interpretations remain open.
 
