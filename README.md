@@ -8,7 +8,7 @@ The engine is evaluated as a core mechanism for:
 * **PRNG**
 * **XOF**
 
-The scalar version reaches over **13 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical @ 4.5 GHz).
+The scalar implementation reaches over **13 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical threads @ 4.5 GHz).
 
 ### Repositories
 
