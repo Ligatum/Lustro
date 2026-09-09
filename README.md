@@ -1,17 +1,24 @@
-## **Lustro V1 Project Description**
+# Lustro V1
 
-Lustro V1 is a deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Implemented in Rust, the engine provides a unified API with streaming capabilities, built-in batching, and automatic parallel stream dispatch.
+Lustro V1 is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Implemented in Rust, it provides a unified API with streaming, batching, and automatic parallel stream dispatch.
 
-The architecture is currently evaluated as a core mechanism for primitives, including hash functions, pseudo-random number generators (PRNG), and extendable-output functions (XOF). Multi-threaded aggregate throughput for the scalar implementation reaches over 13 GB/s using batch processing (tested on Intel i5-11600K, 12t @ 4.5 GHz).
+The engine is evaluated as a core mechanism for:
 
-The API, technical documentation, test implementations, empirical evaluation, and design philosophy are provided across the Lustro repositories.
+* **Hash**
+* **PRNG**
+* **XOF**
 
-All observations presented in this repository are empirical and describe the system's observed behavior. They are not intended as a formal proof of cryptographic security.
+The scalar version reaches over **13 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical @ 4.5 GHz).
 
-## Links
+### Repositories
 
-* **API Layer & Bindings:** [Lustro_API Repository](https://github.com/Ligatum/Lustro_API)
-* **Standalone Reference Core:** [Lustro_Audit Repository](https://github.com/Ligatum/Lustro_Audit)
+The project is intentionally split into dedicated repositories:
+
+* **Lustro** — this main repository with documentation, specifications, tests, and empirical results
+* **Lustro_API** — API and implementation [Lustro_API Repository](https://github.com/Ligatum/Lustro_API)
+* **Lustro_Audit** — Audit code and analysis [Lustro_Audit Repository](https://github.com/Ligatum/Lustro_Audit)
+
+All results presented here are empirical observations of the system's behavior. They do not constitute a formal proof of cryptographic security.
 
 ---
 
