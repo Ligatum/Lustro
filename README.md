@@ -32,10 +32,10 @@ All results presented here are empirical observations of the system's behavior. 
 
 Detailed documentation for the project is available below:
 
-1. **[Technical Concept](https://github.com/Ligatum/Lustro/blob/main/DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. Test results with source files are provided under this **[link](TESTS)**.
+1. **[Technical Concept](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. Test results with source files are provided under this **[link](TESTS)**.
 2. **[Ecosystem Policy](DOCS/ECOSYSTEM-POLICY.md)** – Guidelines and policies concerning the ecosystem.
 3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
-4. **[API Architecture](DOCS/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. Ready to use C/C++ DLL files can be found under this **[link](API/LUSTRO_DLL_FILES)**.
+4. **[API Architecture](https://github.com/Ligatum/Lustro_API/blob/main/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. Ready to use C/C++ DLL files can be found under this **[link](API/LUSTRO_DLL_FILES)**.
 5. **[Philosophy & Origins](DOCS/ORIGINS.md)** – Why Lustro...?
 
 ---
