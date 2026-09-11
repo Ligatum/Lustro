@@ -46,4 +46,4 @@ Detailed documentation for the project is available below:
 
 **<p align="center">Conceptual diagram of the Lustro mechanism.</p>**
 
-<img width="1359" height="1061" alt="lustro_diagram" src="https://github.com/user-attachments/assets/a267cf39-e666-4cb4-985c-218afd4a5e1f" />
+<img width="1420" height="1108" alt="conceptual diagram" src="https://github.com/user-attachments/assets/44a69b9e-e527-48ed-b5f0-23fbd92e8963" />
