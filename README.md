@@ -1,6 +1,6 @@
 # Lustro V1
 
-Lustro V1 is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Implemented in Rust, it provides a unified API with streaming, batching, and automatic parallel stream dispatch. The API provides Python and C/C++ extensions.
+Lustro V1 is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Lustro relies on two complementary mechanisms: ERD generates control parameters through a multi-stage, co-evolving internal state and applies them to the shared state, which then feeds into IDM's next round of the main transformation. Implemented in Rust, it provides a unified API with streaming, batching, live-state forking, and automatic parallel stream dispatch. The API provides Python and C/C++ extensions.
 
 The engine is evaluated as a core mechanism for:
 
