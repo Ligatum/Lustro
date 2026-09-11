@@ -15,8 +15,8 @@ The scalar implementation (using the C/C++ interface) reaches over **13 GB/s** a
 The project is intentionally split into dedicated repositories:
 
 * **Lustro** — this main repository with documentation, specifications, tests, and empirical results
-* **Lustro_API** — API and implementation [Lustro_API Repository](https://github.com/Ligatum/Lustro_API)
-* **Lustro_Audit** — Audit code and analysis [Lustro_Audit Repository](https://github.com/Ligatum/Lustro_Audit)
+* **Lustro_API** — API and implementation **[Lustro_API Repository](https://github.com/Ligatum/Lustro_API)**
+* **Lustro_Audit** — Audit code and analysis **[Lustro_Audit Repository](https://github.com/Ligatum/Lustro_Audit)**
 
 All results presented here are empirical observations of the system's behavior. They do not constitute a formal proof of cryptographic security.
 
