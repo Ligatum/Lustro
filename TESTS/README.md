@@ -1,4 +1,4 @@
-Agregate test results performed on the Lustro_Audit code. Test source files are included in this folder.<br>
+Agregate test results performed on the [Lustro_Audit](https://github.com/Ligatum/Lustro_Audit). Test results source files are included in this folder.<br>
 
 Please note that BigCrush, PractRand, NIST and SMHasher are performed using dedicated test wrappers designed specifically to stress the raw Lustro Core state. These wrappers are not production implementations and exist solely to evaluate the statistical behavior of the underlying mechanism.<br>
 
