@@ -45,7 +45,7 @@
 
 ## 3. Empirical Observations
 
-- **Mechanism Behaviour:** Lustro does not seem to behave like a traditional layered transformation pipeline. Observations suggest that it can be interpreted as a dynamic 'state-flow' controlled system. During its development the engine underwent industry standard tests (BigCrush, PractRand, Smhasher3, NIST SP 800-22) alongside a battery of custom-made tests. Primary aim was to evaluate raw dynamics of Lustro Core, without relying on any additional transformation layer. The complete test suites are available within the repository.
+- **Mechanism Behaviour:** Lustro does not seem to behave like a traditional layered transformation pipeline. Observations suggest that it can be interpreted as a dynamic 'state-flow' controlled system. During its development the engine underwent industry standard tests (BigCrush, PractRand, Smhasher3, NIST SP 800-22) alongside a battery of custom-made tests. Primary aim was to evaluate raw dynamics of Lustro Core, without relying on any additional transformation layer. The test suites, along with test results are available within the repository.
 
 - **Dynamic Rotation Behaviour:** Rotations within Lustro V1 do not act as fixed parameters. Instead, rotation values emerge directly from the evolving state, continuously altering the permutation geometry and reducing the persistence of observable structural patterns.
 
