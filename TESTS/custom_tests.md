@@ -869,47 +869,6 @@
   [diagnostic] ac_z=1.10σ  (H0 distribution not derived — autocorrelation informational only)
 
 [>>>] B32D: ORBIT FINGERPRINT RECURRENCE
-[>>>] Samples: 2,000,000 | Max orbit: 8,192 | FP bits: 32
-  Building H0 baseline (50,000 simulated orbits, Rust)...
-
-  --- H0 BASELINE (uniform iid fp(t), Rust, n=50,000) ---
-  FP space             : 2^32 = 4,294,967,296
-  H0 recur. rate       : 7.960000e-03  (n=50,000 orbits)
-  H0 mean gap          : 2746.96  (conditional on recurrence)
-  E[first recurrence]  : 8.21e+04 steps  (birthday paradox reference, absolute t2 — not used in verdict)
-
-  --- ORBIT FINGERPRINT RECURRENCE RESULTS ---
-  States sampled       : 2,000,000
-  Recurrences found    : 15,690  (0.7845%)
-  H0 expected rate     : 0.7960%  (z=-0.29σ)
-  No recurrence        : 1,984,310  (orbit > 8,192)
-  Min recurrence dist  : 1
-  Max recurrence dist  : 8,114
-  Mean recurrence dist : 2705.58  (conditional on recurrence found)
-  Median recur. dist   : 2346.00
-
-  Recurrence gap distribution  (H0 baseline from Rust simulation):
-  range                      obs    obs_frac     h0_frac    ratio
-  --------------------------------------------------------------
-  [1, 2)                       4    0.000002    0.000000      nan
-  [2, 4)                      11    0.000005    0.000000      nan
-  [4, 8)                      13    0.000006    0.000000      nan
-  [8, 16)                     30    0.000015    0.000000      nan
-  [16, 32)                    57    0.000029    0.000020     1.43
-  [32, 64)                   124    0.000062    0.000060     1.03
-  [64, 128)                  245    0.000122    0.000120     1.02
-  [128, 256)                 470    0.000235    0.000260     0.90
-  [256, 512)               1,015    0.000508    0.000440     1.15
-  [512, 1024)              1,737    0.000869    0.001080     0.80
-  [1024, 8193)            11,984    0.005992    0.005980     1.00
-
-  Adjacent-step FP collisions (distance=1)  [diagnostic only]:
-  Observed             : 4
-  FP collisions        : 0  (unique=15,690 / total=15,690)
-
-  [OK] FP recurrence consistent with H0 baseline
-
-[>>>] B32D: ORBIT FINGERPRINT RECURRENCE
 [>>>] Samples: 4,000,000 | Max orbit: 8,192 | FP bits: 32
   Building H0 baseline (50,000 simulated orbits, Rust)...
 
