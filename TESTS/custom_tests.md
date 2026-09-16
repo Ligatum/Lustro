@@ -773,54 +773,6 @@
   [OK] XOR-projection uniform — no concentration detected
 
 [>>>] B32C: ORBIT MIXING UNDER ITERATION
-[>>>] Samples: 10,000,000 | Steps: 128
-
-  Per-bit density analysis:
-  Max |density - 0.5|  : 0.000790  (bit 126, step 4)
-  Bit z_raw            : 5.00σ
-  Bit z_ev             : +0.44σ  (EVT baseline 4.56σ)
-
-  --- ORBIT MIXING RESULTS ---
-  σ(HW mean)           : 0.0025
-  σ(word mean)         : 0.0013
-  Max |HW - 128| / σ   : 2.15σ  (over 128 steps)
-  Max |word - 32| / σ  : 3.85σ
-
-  HW mean by step (first 16 and last 4):
-   step   hw_mean       dev        z
-  -----------------------------------
-      0  127.9994    0.0006     0.23σ
-      1  128.0012    0.0012     0.47σ
-      2  127.9953    0.0047     1.85σ
-      3  128.0032    0.0032     1.27σ
-      4  128.0013    0.0013     0.52σ
-      5  127.9976    0.0024     0.94σ
-      6  127.9953    0.0047     1.84σ
-      7  127.9999    0.0001     0.06σ
-      8  127.9992    0.0008     0.33σ
-      9  127.9953    0.0047     1.86σ
-     10  128.0003    0.0003     0.14σ
-     11  128.0002    0.0002     0.07σ
-     12  127.9990    0.0010     0.39σ
-     13  128.0003    0.0003     0.12σ
-     14  128.0008    0.0008     0.33σ
-     15  128.0009    0.0009     0.34σ
-    124  128.0054    0.0054     2.14σ
-    125  128.0006    0.0006     0.25σ
-    126  128.0011    0.0011     0.45σ
-    127  128.0004    0.0004     0.16σ
-
-  Autocorrelation of HW series:
-  lag 1  :  +0.054254
-  lag 2  :  -0.018507
-  lag 3  :  +0.078621
-  lag 4  :  +0.060448
-  lag 5  :  +0.108305
-
-  [diagnostic] hw_z_ev=-0.96σ  w_z_ev=+0.74σ  bit_z_ev=+0.44σ  (EVT assumes independence — informational only)
-  [diagnostic] ac_z=1.23σ  (H0 distribution not derived — autocorrelation informational only)
-
-[>>>] B32C: ORBIT MIXING UNDER ITERATION
 [>>>] Samples: 10,000,000 | Steps: 1024
 
   Per-bit density analysis:
