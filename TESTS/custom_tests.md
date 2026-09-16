@@ -1238,7 +1238,7 @@
   --- TREND ANALYSIS (Spearman: log2(cp) vs mean_entropy_loss) ---
   Spearman r           : +0.1206
   p-value              : 0.6564
-  [OK] no systematic entropy loss trend
+  [OK] no increasing entropy-loss trend detected
 
   --- VERDICT ---
   [OK] entropy loss consistent with Miller-Madow finite-sample baseline
