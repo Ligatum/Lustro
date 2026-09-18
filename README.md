@@ -28,7 +28,7 @@ All results presented here are empirical observations of the system's behavior. 
 
 **<p align="center">Comparative overview of Lustro tree batching capabilities.</p>**
 
-<img width="1814" height="1087" alt="lustro_comparison" src="https://github.com/user-attachments/assets/d523895d-e50e-4db7-9a9c-c2b32537770a" />
+<img width="1620" height="971" alt="lustro_comparison" src="https://github.com/user-attachments/assets/02ad75c8-8de6-459c-b8f8-d7274c604abe" />
 
 ---
 
