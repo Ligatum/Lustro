@@ -46,4 +46,4 @@ Detailed documentation for the project is available below:
 
 **<p align="center">Conceptual diagram of Lustro ERD mechanism.</p>**
 
-<p align="center"><img width="500" height="750" alt="conceptual diagram" src="https://github.com/user-attachments/assets/2ba7e8e7-b0c2-464c-8329-4cd94d9c74db" /></p>
+<p align="center"><img width="500" height="750" alt="conceptual diagram" src="https://github.com/user-attachments/assets/6c223b2b-c775-4bc7-be8e-047764bcd6fb" /></p>
