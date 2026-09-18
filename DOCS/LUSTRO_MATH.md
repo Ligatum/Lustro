@@ -350,6 +350,10 @@ $$
 * $\mathrm{rot}_0,\mathrm{rot}_1$ — 32-bit rotation amounts.
 
 $$
+\phi = \mathrm{0x9E3779B97F4A7C15}
+$$
+
+$$
 \mathrm{rc} = \phi \odot (\mathrm{step} \boxplus 2)
 $$
 
