@@ -186,7 +186,7 @@ $$
 
 # ERD — Mathematical Notation
 
-* $\boxplus$ — addition modulo $2^n$, where $n$ denotes the operand width; specifically, modulo $2^{128}$ for base values and modulo $2^{64}$ for working channels.
+* $\boxplus$ — addition modulo $2^n$.
 * $\oplus$ — bitwise XOR operation.
 * $\odot$ — multiplication modulo $2^{64}$.
 * $\lor$ — bitwise OR operation.
