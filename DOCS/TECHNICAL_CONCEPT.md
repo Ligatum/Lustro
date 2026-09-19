@@ -1,4 +1,3 @@
-# Lustro V1
 
 **A chemist by education. A systems observer and explorer by obsession.**
 
