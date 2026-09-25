@@ -114,6 +114,119 @@
   [OK] no conditional bias
 [OK] Test B2 finished in 513.05s.
 
+Note for B2: 4x increase in sample size caused ~2x decrease
+in sampling error, consistent with 1/sqrt(N) scaling.
+[*] Running test: B2...
+
+[>>>] B2: AVALANCHE / SAC
+[>>>] Samples: 20,000,000
+[>>>] Single-bit flips: 256
+[>>>] Second-order pairs: 512
+  [1/5] single-bit flips...
+  [2/5] second-order SAC (512 pairs)...
+  [3/5] structured flips (108 masks)...
+  [4/5] conditional SAC (256 bits)...
+  [5/5] analysis...
+
+[B2] RESULTS (samples=20,000,000)
+
+  --- SAC MATRIX (single-bit) ---
+  Max deviation    : 0.000463  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(250), np.int64(78))
+  EV-normalized z  : -0.57σ
+  [OK] uniform
+
+  --- LANE s0 -> o0 ---
+  Max deviation    : 0.000449  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(82), np.int64(6))
+  EV-normalized z  : -0.39σ
+  [OK] uniform
+
+  --- LANE s0 -> o1 ---
+  Max deviation    : 0.000445  (ideal 0.0)
+  Mean deviation   : 0.000090
+  RMS deviation    : 0.000113
+  Worst cell       : (np.int64(66), np.int64(103))
+  EV-normalized z  : -0.43σ
+  [OK] uniform
+
+  --- LANE s1 -> o0 ---
+  Max deviation    : 0.000463  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(122), np.int64(78))
+  EV-normalized z  : -0.26σ
+  [OK] uniform
+
+  --- LANE s1 -> o1 ---
+  Max deviation    : 0.000416  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(110), np.int64(63))
+  EV-normalized z  : -0.69σ
+  [OK] uniform
+
+  --- SECOND-ORDER SAC ---
+  Max deviation    : 0.000521  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(73), np.int64(182))
+  EV-normalized z  : -0.20σ
+  [OK] uniform
+
+  --- STRUCTURED FLIPS ---
+  Max deviation    : 0.000490  (ideal 0.0)
+  Mean deviation   : 0.000089
+  RMS deviation    : 0.000112
+  Worst cell       : (np.int64(30), np.int64(7))
+  EV-normalized z  : -0.14σ
+  [OK] uniform
+
+  --- HW: single-bit flips ---
+  Avg HW           : 128.0002  (ideal 128.0)
+  Variance HW      : 63.9988  (ideal ~64.0)
+  Avg HW deviation : 0.0002
+  [OK] no diffusion anomaly detected
+  [OK] HW variance normal (0.1σ from ideal)
+
+  --- HW: second-order flips ---
+  Avg HW           : 128.0000  (ideal 128.0)
+  Variance HW      : 64.0018  (ideal ~64.0)
+  Avg HW deviation : 0.0000
+  [OK] no diffusion anomaly detected
+  [OK] HW variance normal (0.1σ from ideal)
+
+  --- HW: structured flips ---
+  Avg HW           : 128.0002  (ideal 128.0)
+  Variance HW      : 64.0004  (ideal ~64.0)
+  Avg HW deviation : 0.0002
+  [OK] no diffusion anomaly detected
+  [OK] HW variance normal (0.0σ from ideal)
+
+  --- CONDITIONAL SAC ---
+  Worst input bit  : 198
+  Max |P0-P1|      : 0.000978
+  EV-normalized z  : -0.34σ
+
+  Top 10 asymmetric input bits:
+    bit 198 : max|P0-P1| = 0.000978  mean = 0.000184  RMS = 0.000234  EV-z = -0.34σ
+    bit 132 : max|P0-P1| = 0.000927  mean = 0.000197  RMS = 0.000247  EV-z = -0.56σ
+    bit 181 : max|P0-P1| = 0.000927  mean = 0.000179  RMS = 0.000227  EV-z = -0.57σ
+    bit  32 : max|P0-P1| = 0.000897  mean = 0.000190  RMS = 0.000237  EV-z = -0.70σ
+    bit  27 : max|P0-P1| = 0.000884  mean = 0.000179  RMS = 0.000231  EV-z = -0.76σ
+    bit 208 : max|P0-P1| = 0.000855  mean = 0.000178  RMS = 0.000221  EV-z = -0.89σ
+    bit 180 : max|P0-P1| = 0.000853  mean = 0.000174  RMS = 0.000219  EV-z = -0.90σ
+    bit 223 : max|P0-P1| = 0.000838  mean = 0.000179  RMS = 0.000225  EV-z = -0.96σ
+    bit  55 : max|P0-P1| = 0.000822  mean = 0.000194  RMS = 0.000242  EV-z = -1.03σ
+    bit  96 : max|P0-P1| = 0.000820  mean = 0.000181  RMS = 0.000231  EV-z = -1.04σ
+
+  [OK] no conditional bias
+[OK] Test B2 finished in 1919.30s.
+
 [*] Running test: B13...
 
 [>>>] B13: STRUCTURED & TRUNCATED HIGHER-ORDER DIFFERENTIAL
@@ -645,6 +758,22 @@
   Entropy loss         : 0.000037
   [OK] XOR-projection uniform — no concentration detected
 
+Note for B32B: 16x increase in total visits reduced the relative maximum
+bucket deviation by ~4x, consistent with 1/sqrt(N) sampling scaling.
+[>>>] B32B: XOR-PROJECTION OCCUPANCY
+[>>>] Samples: 20,000,000 | Steps/state: 1024 | Buckets: 65,536
+[>>>] Projection: upper 16 bits of s0^s1^s2^s3
+
+  --- XOR-PROJECTION OCCUPANCY RESULTS ---
+  Total visits         : 20,480,000,000
+  Expected per bucket  : 312500.00
+  EVT baseline (max z) : 4.71σ
+  Max bucket visits    : 314,723  (z=+3.98σ, EV-corr=-0.73σ)
+  Chi-square           : 65654.56  (dof=65535, z=+0.33σ)
+  Bucket entropy       : 15.999998 / 16.000000 bits
+  Entropy loss         : 0.000002
+  [OK] XOR-projection uniform — no concentration detected
+
 [>>>] B32C: ORBIT MIXING UNDER ITERATION
 [>>>] Samples: 10,000,000 | Steps: 128
 
@@ -693,56 +822,106 @@
   [diagnostic] hw_z_ev=-0.71σ  w_z_ev=-0.39σ  bit_z_ev=-0.63σ  (EVT assumes independence — informational only)
   [diagnostic] ac_z=1.38σ  (H0 distribution not derived — autocorrelation informational only)
 
+Note for B32C: Note for B32C: 2x increase in sample size reduced HW/word mean sampling error
+to ~0.7  x, consistent with 1/sqrt(2) scaling. Autocorrelation also weakened in the longer run.
+[>>>] B32C: ORBIT MIXING UNDER ITERATION
+[>>>] Samples: 20,000,000 | Steps: 1024
+
+  Per-bit density analysis:
+  Max |density - 0.5|  : 0.000511  (bit 3, step 695)
+  Bit z_raw            : 4.57σ
+  Bit z_ev             : -0.42σ  (EVT baseline 5.00σ)
+
+  --- ORBIT MIXING RESULTS ---
+  σ(HW mean)           : 0.0018
+  σ(word mean)         : 0.0009
+  Max |HW - 128| / σ   : 3.59σ  (over 1024 steps)
+  Max |word - 32| / σ  : 3.82σ
+
+  HW mean by step (first 16 and last 4):
+   step   hw_mean       dev        z
+  -----------------------------------
+      0  127.9977    0.0023     1.28σ
+      1  128.0032    0.0032     1.81σ
+      2  128.0000    0.0000     0.03σ
+      3  127.9994    0.0006     0.32σ
+      4  128.0007    0.0007     0.40σ
+      5  128.0009    0.0009     0.51σ
+      6  128.0001    0.0001     0.05σ
+      7  128.0000    0.0000     0.01σ
+      8  128.0048    0.0048     2.66σ
+      9  127.9994    0.0006     0.32σ
+     10  128.0007    0.0007     0.41σ
+     11  128.0008    0.0008     0.42σ
+     12  127.9999    0.0001     0.06σ
+     13  128.0003    0.0003     0.17σ
+     14  128.0015    0.0015     0.82σ
+     15  128.0023    0.0023     1.30σ
+   1020  127.9982    0.0018     1.01σ
+   1021  127.9996    0.0004     0.25σ
+   1022  127.9976    0.0024     1.32σ
+   1023  128.0029    0.0029     1.59σ
+
+  Autocorrelation of HW series:
+  lag 1  :  +0.016197
+  lag 2  :  +0.021683
+  lag 3  :  -0.035682
+  lag 4  :  +0.025341
+  lag 5  :  -0.013959
+
+  [diagnostic] hw_z_ev=-0.14σ  w_z_ev=+0.10σ  bit_z_ev=-0.42σ  (EVT assumes independence — informational only)
+  [diagnostic] ac_z=1.14σ  (H0 distribution not derived — autocorrelation informational only)
+
 [>>>] B32D: ORBIT FINGERPRINT RECURRENCE
-[>>>] Samples: 2,000,000 | Max orbit: 8,192 | FP bits: 32
+[>>>] Samples: 2,000,000 | Max orbit: 65,536 | FP bits: 32
   Building H0 baseline (50,000 simulated orbits, Rust)...
 
   --- H0 BASELINE (uniform iid fp(t), Rust, n=50,000) ---
   FP space             : 2^32 = 4,294,967,296
-  H0 recur. rate       : 7.960000e-03  (n=50,000 orbits)
-  H0 mean gap          : 2746.96  (conditional on recurrence)
+  H0 recur. rate       : 3.912800e-01  (n=50,000 orbits)
+  H0 mean gap          : 20678.37  (conditional on recurrence)
   E[first recurrence]  : 8.21e+04 steps  (birthday paradox reference, absolute t2 — not used in verdict)
 
   --- ORBIT FINGERPRINT RECURRENCE RESULTS ---
   States sampled       : 2,000,000
-  Recurrences found    : 15,564  (0.7782%)
-  H0 expected rate     : 0.7960%  (z=-0.44σ)
-  No recurrence        : 1,984,436  (orbit > 8,192)
+  Recurrences found    : 786,950  (39.3475%)
+  H0 expected rate     : 39.1280%  (z=+0.99σ)
+  No recurrence        : 1,213,050  (orbit > 65,536)
   Min recurrence dist  : 1
-  Max recurrence dist  : 8,138
-  Mean recurrence dist : 2745.70  (conditional on recurrence found)
-  Median recur. dist   : 2423.00
+  Max recurrence dist  : 65,519
+  Mean recurrence dist : 20729.07  (conditional on recurrence found)
+  Median recur. dist   : 17899.00
 
   Recurrence gap distribution  (H0 baseline from Rust simulation):
   range                      obs    obs_frac     h0_frac    ratio
   --------------------------------------------------------------
-  [1, 2)                       5    0.000003    0.000000      nan
-  [2, 4)                       7    0.000003    0.000000      nan
-  [4, 8)                       9    0.000005    0.000000      nan
-  [8, 16)                     24    0.000012    0.000000      nan
-  [16, 32)                    68    0.000034    0.000020     1.70
-  [32, 64)                   124    0.000062    0.000060     1.03
-  [64, 128)                  235    0.000117    0.000120     0.98
-  [128, 256)                 444    0.000222    0.000260     0.85
-  [256, 512)                 913    0.000456    0.000440     1.04
-  [512, 1024)              1,773    0.000887    0.001080     0.82
-  [1024, 8193)            11,962    0.005981    0.005980     1.00
+  [1, 2)                      36    0.000018    0.000000      nan
+  [2, 4)                      49    0.000024    0.000000      nan
+  [4, 8)                      98    0.000049    0.000020     2.45
+  [8, 16)                    192    0.000096    0.000080     1.20
+  [16, 32)                   415    0.000208    0.000200     1.04
+  [32, 64)                   842    0.000421    0.000380     1.11
+  [64, 128)                1,713    0.000856    0.000900     0.95
+  [128, 256)               3,326    0.001663    0.001360     1.22
+  [256, 512)               6,692    0.003346    0.003180     1.05
+  [512, 1024)             13,240    0.006620    0.006740     0.98
+  [1024, 65537)          760,347    0.380173    0.378420     1.00
 
   Adjacent-step FP collisions (distance=1)  [diagnostic only]:
-  Observed             : 5
-  FP collisions        : 0  (unique=15,564 / total=15,564)
+  Observed             : 36
+  FP collisions        : 72  (unique=786,878 / total=786,950)
 
   [OK] FP recurrence consistent with H0 baseline
 
 [>>>] B32E: STATE-SPACE PROFILE
-[>>>] Samples: 10,000,000 | Checkpoints: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 4096]
+[>>>] Samples: 10,000,000 | Checkpoints: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 4096, 8192, 16384, 32768, 65536]
 [>>>] Windows: 16 | Buckets/window: 65,536
 [>>>] λ = N/K = 152.59 | MM bias = 0.004727
 
   --- MILLER-MADOW FINITE-SAMPLE BASELINE ---
   Theoretical MM bias  : 0.004727
-  Observed range       : 0.004725 .. 0.004737
-  Deviation from MM    : -2.42e-06 .. +9.27e-06
+  Observed range       : 0.004725 .. 0.004741
+  Deviation from MM    : -2.42e-06 .. +1.39e-05
 
   --- ENTROPY LOSS PER CHECKPOINT (mean ± std over 16 windows) ---
     checkpoint       mean_el      std_el   max_bkt_zev    occupied  verdict
@@ -759,10 +938,14 @@
            512      0.004731    2.82e-05         +0.34σ     65536.0  [OK]
           1024      0.004733    2.90e-05         +0.91σ     65536.0  [OK]
           4096      0.004725    2.75e-05         +0.18σ     65536.0  [OK]
+          8192      0.004727    2.86e-05         +0.91σ     65536.0  [OK]
+         16384      0.004734    2.14e-05         +0.34σ     65536.0  [OK]
+         32768      0.004734    2.09e-05         +0.34σ     65536.0  [OK]
+         65536      0.004741    1.90e-05         +0.50σ     65536.0  [OK]
 
   --- DELTA ENTROPY LOSS ---
-  Δ entropy_loss (cp4096 - cp1) : -0.000008
-  max - min across checkpoints  : 0.000012
+  Δ entropy_loss (cp4096 - cp1) : +0.000008
+  max - min across checkpoints  : 0.000016
 
   --- GLOBAL MAX BUCKET ---
   Global max occupancy : 227  (z=+6.02σ, EV-corr=+1.31σ)
@@ -784,6 +967,10 @@
            512      0.999729      1.009811
           1024      0.999947      1.010699
           4096      0.998420      1.007392
+          8192      0.998935      1.008050
+         16384      1.000151      1.009812
+         32768      1.000465      1.011081
+         65536      1.001826      1.007200
 
   --- OCCUPANCY SPECTRUM — worst (cp=128, window=10) ---
   Entropy loss         : 0.004744
@@ -803,8 +990,8 @@
   p99.9  : 192.5  |  p99.99 : 200.0
 
   --- TREND ANALYSIS (Spearman: log2(cp) vs mean_entropy_loss) ---
-  Spearman r           : -0.5385
-  p-value              : 0.0709
+  Spearman r           : +0.0412
+  p-value              : 0.8797
   [OK] no increasing entropy-loss trend detected
 
   --- VERDICT ---
@@ -812,8 +999,8 @@
   [OK] no concentration trend detected
 
 [>>>] B32F: NEAR-NEIGHBOUR DISTANCE RETENTION
-[>>>] Pairs: 102,400 | Max steps: 4,096
-[>>>] Checkpoints: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 4096]
+[>>>] Pairs: 102,400 | Max steps: 65,536
+[>>>] Checkpoints: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 4096, 8192, 16384, 32768, 65536]
 [>>>] H0 reference: HD ~ Binomial(256, 0.5)  μ=128.0  σ=8.0
 
   --- HD PER CHECKPOINT ---
@@ -835,21 +1022,24 @@
      512  127.935   7.985   109   115   128   141   146      0.0000      0.0011      0.0195     -2.60σ
     1024  128.039   7.992   110   115   128   141   147      0.0000      0.0010      0.0189     +1.56σ
     4096  128.024   8.024   109   115   128   141   147      0.0000      0.0009      0.0200     +0.97σ
+    8192  127.985   8.015   109   115   128   141   147      0.0000      0.0010      0.0195     -0.60σ
+   16384  128.033   7.999   109   115   128   141   146      0.0000      0.0011      0.0195     +1.31σ
+   32768  128.022   8.009   110   115   128   141   147      0.0000      0.0010      0.0192     +0.87σ
+   65536  127.994   8.028   109   115   128   141   147      0.0001      0.0011      0.0204     -0.22σ
 
-  --- min_HD ACROSS FULL TRAJECTORY (T=4096) ---
+  --- min_HD ACROSS FULL TRAJECTORY (T=65536) ---
 Independent-sample reference (iid order-statistics model)
-  H0 P(min<=8)=0.00e+00  P(min<=16)=0.00e+00  P(min<=32)=0.00e+00  P(min<=64)=9.09e-13
+  H0 P(min<=8)=0.00e+00  P(min<=16)=0.00e+00  P(min<=32)=0.00e+00  P(min<=64)=1.46e-11
 
   Observed:
   P(min_HD<=8) =0.00e+00  P(min_HD<=16)=0.00e+00  P(min_HD<=32)=0.00e+00  P(min_HD<=64)=0.00e+00
 
   --- TREND (Spearman: log2(cp) vs mean_HD) ---
-  Spearman r = +0.4755  p = 0.1182
+  Spearman r = +0.5147  p = 0.0413
 
   --- VERDICT ---
   [OK] no trajectory convergence detected
   [OK] close-orbit population consistent with H0 reference
-[OK] Test B32 finished in 419.17s.
 
 [*] Running test: B51...
 
