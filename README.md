@@ -1,0 +1,49 @@
+### Repositories
+
+The project is intentionally split into dedicated repositories:
+
+* **Lustro** — this main repository with documentation, specifications, policies, and test results
+* **Lustro_API** — repository containing the API implementation **[Lustro_API](https://github.com/Ligatum/Lustro_API)**
+* **Lustro_Audit** — repository with internal audit code and analysis **[Lustro_Audit](https://github.com/Ligatum/Lustro_Audit)**
+
+---
+
+# Lustro V1
+
+Lustro V1 is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Lustro relies on two complementary mechanisms: ERD generates control parameters through a multi-stage, co-evolving internal state and applies them to the shared state, which then feeds into IDM's next round of the main transformation.
+
+Implemented in **Rust**, it provides a unified **API with streaming, batching, live-state forking, and automatic parallel stream dispatch**. The API provides **Python** and **C/C++** extensions.
+
+The engine is evaluated as a core mechanism for:
+
+* **Hash**
+* **PRNG**
+* **XOF**
+
+The scalar implementation (using the C/C++ interface) reaches over **13 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical threads @ 4.5 GHz).
+
+All results presented here are empirical observations of the system's behavior. They do not constitute a formal proof of cryptographic security.
+
+---
+
+**<p align="center">Comparative overview of Lustro tree batching capabilities.</p>**
+
+<img width="1619" height="971" alt="lustro_comparison" src="https://github.com/user-attachments/assets/3b82d42c-6831-46bb-bc71-1fbb6d56827f" />
+
+---
+
+## Documentation
+
+Detailed documentation for the project is available below:
+
+1. **[Technical Concept](DOCS/TECHNICAL_CONCEPT.md)** – Core theoretical concept, description and observations. Lustro mathematical notation can be found under this **[link](DOCS/LUSTRO_MATH.md)**. Test results with source files are provided under this **[link](TESTS)**.
+2. **[Ecosystem Policy](DOCS/ECOSYSTEM_POLICY.md)** – Guidelines and policies concerning the ecosystem.
+3. **[FAQ](DOCS/FAQ.md)** – Frequently asked questions.
+4. **[API Architecture](https://github.com/Ligatum/Lustro_API/blob/main/ARCHITECTURE.md)** – Technical breakdown and bindings for Lustro V1 API. Ready to use C/C++ DLL files can be found under this **[link](FILES/LUSTRO_DLL_FILES)**.
+5. **[Philosophy & Origins](DOCS/ORIGINS.md)** – Why Lustro...?
+
+---
+
+**<p align="center">Conceptual diagram of Lustro ERD mechanism.</p>**
+
+<p align="center"><img width="500" height="750" alt="conceptual diagram" src="https://github.com/user-attachments/assets/6c223b2b-c775-4bc7-be8e-047764bcd6fb" /></p>
