@@ -1,4 +1,4 @@
-### Repositories
+# Repositories
 
 The project is intentionally split into dedicated repositories:
 
@@ -8,9 +8,7 @@ The project is intentionally split into dedicated repositories:
 
 ---
 
-# Lustro V1
-
-Lustro V1 is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Lustro relies on two complementary mechanisms: ERD generates control parameters through a multi-stage, co-evolving internal state and applies them to the shared state, which then feeds into IDM's next round of the main transformation.
+**Lustro V1** is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Lustro relies on two complementary mechanisms: ERD generates control parameters through a multi-stage, co-evolving internal state and applies them to the shared state, which then feeds into IDM's next round of the main transformation.
 
 Implemented in **Rust**, it provides a unified **API with streaming, batching, live-state forking, and automatic parallel stream dispatch**. The API provides **Python** and **C/C++** extensions.
 
@@ -32,7 +30,7 @@ All results presented here are empirical observations of the system's behavior. 
 
 ---
 
-## Documentation
+# Documentation
 
 Detailed documentation for the project is available below:
 
