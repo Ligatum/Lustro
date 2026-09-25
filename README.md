@@ -3,8 +3,8 @@
 The project is intentionally split into dedicated repositories:
 
 * **Lustro** — this main repository with documentation, specifications, policies, and test results
-* **Lustro_API** — repository containing the API implementation **[Lustro_API](https://github.com/Ligatum/Lustro_API)**
-* **Lustro_Audit** — repository with internal audit code and analysis **[Lustro_Audit](https://github.com/Ligatum/Lustro_Audit)**
+* **[Lustro_API](https://github.com/Ligatum/Lustro_API)** — repository containing the API implementation
+* **[Lustro_Audit](https://github.com/Ligatum/Lustro_Audit)** — repository with internal audit code and analysis
 
 ---
 
