@@ -4,12 +4,12 @@
 ========================================================================================================================================
 
   Datasets (runs) analyzed : 10
-  Max data volume reached  : 2^43 bytes (8192.00 GB)
+  Max data volume reached  : 2^44 bytes (16384.00 GB)
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   DATA INTEGRITY & PARSER AUDIT
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-  Length blocks parsed     : 213 OK / 213 total (0 malformed/incomplete)
+  Length blocks parsed     : 214 OK / 214 total (0 malformed/incomplete)
   Total anomalies recorded : 14
   Unrecognized lines       : 0
   Parser warnings          : 0
