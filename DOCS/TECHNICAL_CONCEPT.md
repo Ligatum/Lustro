@@ -9,12 +9,11 @@
 
 - Lustro V1 is a deterministic, dynamic diffusion engine designed for rapid information propagation across the full 256-bit state. It departs from conventional layered transformation pipelines by using a state-dependent evolution mechanism. The engine was developed as an experimental architecture to evaluate whether dynamic, state-dependent permutation geometry produces observable properties distinct from fixed-stage constructions. The current implementation is intended for evaluation as a core mechanism for primitives such as hash functions, pseudo-random number generators (PRNGs), and extendable-output functions (XOF). The API implementation and benchmark test suites are provided within the accompanying project repository. Community feedback is highly appreciated.
 
-- Aggregate throughput for the scalar implementation:
+- Aggregate throughput for the AVX2 implementation:
 
   | Cores | Throughput (Hash/PRNG/XOF) |
   |---|---|
-  | 6 physical cores | up to ~10 GB/s |
-  | 12 logical cores | up to ~13 GB/s |
+  | 12 logical cores | up to ~26 GB/s |
 
   Tests were performed on an Intel Core i5-11600K @ 4.5 GHz (constant frequency). Parallel scaling exceeds 90% for large batches.
 
