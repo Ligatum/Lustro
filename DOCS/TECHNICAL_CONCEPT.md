@@ -11,7 +11,7 @@
 
 - Aggregate throughput for the AVX2 implementation:
 
-  | Cores | Throughput (Hash/PRNG/XOF) |
+  | Cores | Throughput (PRNG/XOF) |
   |---|---|
   | 12 logical cores | up to ~26 GB/s |
 
