@@ -1,7 +1,7 @@
 # Lustro V1 FAQ
 
-*This FAQ is a plain-language summary for convenience only. **Version 1.0 – Last Updated 09.09.2026**.*  
-*It does not modify, extend, or override the Lustro Technology License (LTL) 1.0 or the Lustro Ecosystem Policy.*
+*This FAQ is a plain-language summary for convenience only. **Version 1.0 – Last Updated 2026-10-09**.*  
+*It does not modify, extend, or override the Ligatum Technology License (LTL) 1.0 or the Lustro Ecosystem Policy.*
 
 ---
 
@@ -45,7 +45,7 @@ The definition of a Reusable Technology Offering applies regardless of non-profi
 ### Can I implement Lustro Core in an FPGA or ASIC?
 **Yes, for non-commercial research and testing.** Any commercial deployment of a hardware implementation – including manufacturing, selling, or running it internally in a commercial production environment – requires a Commercial License.
 
-### What happens on the Change Date (03-09-2031)?
+### What happens on the Change Date (2031-09-03)?
 On the Change Date, commercial software distribution restrictions on the Licensed Work expire, transitioning the copyright license into a permanent, open license for everyone. *(Note: Hardware implementation restrictions remain governed under their respective terms).*
 
 ### Can I write a language binding (e.g., Go, Node.js, Python, C#)?
@@ -68,4 +68,4 @@ For commercial licensing, exceptions, or clarification regarding your architectu
 📧 **licensing@ligatum.com**
 
 ---
-*Lustro Technology License (LTL) 1.0 · Lustro Ecosystem Policy 1.0 · Copyright © 2026 Ligatum*
+*Ligatum Technology License (LTL) 1.0 · Lustro Ecosystem Policy 1.0 · Copyright © 2026 Ligatum*
