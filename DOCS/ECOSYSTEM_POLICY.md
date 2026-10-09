@@ -1,5 +1,5 @@
 # Lustro Ecosystem Policy
-**Version 1.0 - Last Updated 09.09.2026**
+**Version 1.0 - Last Updated 2026.10.09**
 
 *This document is informational only and does not modify or extend the Ligatum Technology License and will evolve independently from the license.*
 
