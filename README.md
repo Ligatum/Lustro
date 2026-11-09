@@ -24,9 +24,9 @@ Please note that the core mechanism and the API implementation are currently con
 
 ---
 
-**<p align="center">Comparative overview of Lustro tree batching capabilities.</p>**
+**<p align="center">Overview of Lustro V1 capabilities.</p>**
 
-<img width="1619" height="971" alt="lustro_comparison" src="https://github.com/user-attachments/assets/3b82d42c-6831-46bb-bc71-1fbb6d56827f" />
+<img width="1536" height="1024" alt="presentation" src="https://github.com/user-attachments/assets/d45a1755-5f3f-4e01-9965-b1fd2bcc1087" />
 
 ---
 
