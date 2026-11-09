@@ -26,7 +26,7 @@ Please note that the core mechanism and the API implementation are currently con
 
 **<p align="center">Overview of Lustro V1 capabilities.</p>**
 
-<img width="1536" height="1024" alt="presentation" src="https://github.com/user-attachments/assets/d45a1755-5f3f-4e01-9965-b1fd2bcc1087" />
+<img width="1536" height="1024" alt="presentation" src="https://github.com/user-attachments/assets/661f898a-3d3d-45c2-870b-9cf35601bf64" />
 
 ---
 
