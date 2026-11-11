@@ -18,7 +18,7 @@ The engine is evaluated as a core mechanism for:
 * **PRNG**
 * **XOF**
 
-The AVX2 implementation (using the C/C++ interface) reaches **26 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical threads @ 4.5 GHz).
+The AVX2 implementation (using the C/C++ interface) reaches **27 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical threads @ 4.5 GHz).
 
 Please note that the core mechanism and the API implementation are currently considered non-cryptographic. All results presented here are empirical observations of the system's behavior. They do not constitute a formal proof of cryptographic security.
 

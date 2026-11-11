@@ -13,7 +13,7 @@
 
   | Cores | Throughput (PRNG/XOF) |
   |---|---|
-  | 12 logical cores | up to ~26 GB/s |
+  | 12 logical cores | up to ~27 GB/s |
 
   Tests were performed on an Intel Core i5-11600K @ 4.5 GHz (constant frequency). Parallel scaling exceeds 90% for large batches.
 
