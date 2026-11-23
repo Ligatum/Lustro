@@ -10,7 +10,7 @@ The project is intentionally split into dedicated repositories:
 
 **Lustro V1** is a 256-bit deterministic, single-pass diffusion engine where transformation parameters are derived dynamically from the evolving state itself. Lustro relies on two complementary mechanisms: ERD generates control parameters through a multi-stage, co-evolving internal state and applies them to the shared state, which then feeds into IDM's next round of the main transformation.
 
-Implemented in **Rust**, it provides a unified **API with streaming, batching, live-state forking, and automatic parallel stream dispatch**. The API provides **Python** and **C/C++** extensions.
+Implemented in **Rust**, it provides a unified **API with streaming, batching, live-state forking, library level hierarchical stream management and automatic parallel stream dispatch**. The API provides **Python** and **C/C++** extensions.
 
 The engine is evaluated as a core mechanism for:
 
@@ -18,7 +18,7 @@ The engine is evaluated as a core mechanism for:
 * **PRNG**
 * **XOF**
 
-The AVX2 implementation reaches **27 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (12 logical threads @ 4.5 GHz).
+The AVX2 implementation reaches **27 GB/s** aggregate throughput with batch processing, tested on an Intel i5-11600K (6C/12T @ 4.5 GHz).
 
 Please note that the core mechanism and the API implementation are currently considered non-cryptographic. All results presented here are empirical observations of the system's behavior. They do not constitute a formal proof of cryptographic security.
 

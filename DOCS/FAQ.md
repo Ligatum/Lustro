@@ -6,7 +6,7 @@
 ---
 
 > **Most developers never need a Commercial License.**  
-> You are generally free to use Lustro in your own software, including commercial products and SaaS. A Commercial License is only required if you want to distribute Lustro itself as a reusable development technology, commercially exploit hardware implementations, or obtain a specific licensing exception.
+> You are generally free to use Lustro in your own software, including commercial products and SaaS. A Commercial License is required if you make the Licensed Work or the functionality of Lustro Core available to third parties as a reusable development technology, commercially exploit hardware implementations, or obtain a specific licensing exception.
 
 ---
 
@@ -23,19 +23,21 @@
 **Yes.** You may modify the Licensed Work and create derivative works, including as part of your own commercial products and services, subject to the terms in the License. Ligatum maintains its canonical reference implementation as the ecosystem's Single Source of Truth (SSoT).
 
 ### Can I put Lustro inside my own SDK or framework that I sell to other companies?
-**Yes**, provided that your SDK does not expose Lustro Core itself as a primary reusable technology or development platform to your customers. If your SDK's main purpose is to provide third parties with access to Lustro Core as a Reusable Technology Offering, a Commercial License is required.
+
+**Yes**, provided that Lustro remains an internal implementation component and your customers receive only your SDK's application-level functionality. A Commercial License is required if your SDK makes the Licensed Work or the functionality of Lustro Core available to customers as a Reusable Technology Offering.
 
 ---
 
 ### When do I actually need a Commercial License?
-A Commercial License is required when Lustro Core itself is offered as a **Reusable Technology Offering**, or when **Commercial Hardware Exploitation** is involved.
+
+A Commercial License is required when the Licensed Work or the functionality of Lustro Core is made available to third parties as a Reusable Technology Offering, or when Commercial Hardware Exploitation is involved.
 
 Typical examples requiring a license:
-- Hosted cloud services primarily providing raw Lustro Core execution or API access.
-- Public APIs or SDKs whose primary purpose is to expose Lustro Core to third-party developers.
+- Hosted services or APIs that provide third parties with reusable access to general-purpose Lustro Core functionality, such as hash, PRNG, XOF, stream derivation, or forking.
+- SDKs, libraries, or frameworks that make the Licensed Work or functionality of Lustro Core available to third-party developers as reusable technology.
 - Commercial FPGA, ASIC, or hardware implementations.
 
-*Building standard applications that use Lustro merely as an internal component does not require a Commercial License. If you are unsure whether your project requires a license, please reach out to us.*
+Using Lustro internally as an implementation component of a larger application or service does not by itself require a Commercial License. If you are unsure whether your project requires a license, please reach out to us.
 
 ---
 
@@ -49,7 +51,7 @@ The definition of a Reusable Technology Offering applies regardless of non-profi
 On the Change Date, commercial software distribution restrictions on the Licensed Work expire, transitioning the copyright license into a permanent, open license for everyone. *(Note: Hardware implementation restrictions remain governed under their respective terms).*
 
 ### Can I write a language binding (e.g., Go, Node.js, Python, C#)?
-**Yes, this is highly encouraged.** If your binding interfaces with an unmodified Lustro Core without redistributing a modified engine as a competing platform, it is not restricted by this License. The code you write for the binding belongs entirely to you.
+**Yes, this is highly encouraged.** A binding may interface with a locally deployed, unmodified Lustro Core, provided it does not incorporate, distribute, or make the Licensed Work available, or offer Lustro Core functionality to third parties as a Reusable Technology Offering. The code you write for the binding belongs entirely to you.
 
 ### Can I fork the project?
 **Yes.** Forking and modification are permitted under the License. However, you cannot distribute or offer your fork as a Reusable Technology Offering, nor represent it as an official or authorized implementation of Lustro Core. Our guiding principle is *Reference before fragmentation*.
