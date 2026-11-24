@@ -1,7 +1,8 @@
 # Lustro V1 FAQ
 
-*This FAQ is a plain-language summary for convenience only. **Version 1.0 – Last Updated 2026-10-09**.*  
-*It does not modify, extend, or override the Ligatum Technology License (LTL) 1.0 or the Lustro Ecosystem Policy.*
+**Last Updated 2026-11-24**
+
+*This FAQ is a plain-language summary for convenience only. It does not modify, extend, or override the Ligatum Technology License (LTL) 1.0 or the Lustro Ecosystem Policy.*
 
 ---
 
